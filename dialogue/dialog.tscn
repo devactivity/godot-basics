@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://8vfpiox5fq0k"]
+
+[ext_resource type="Texture2D" uid="uid://b3v81kk2tf4of" path="res://assets/sprites/Banners/Carved_9Slides.png" id="1_gkjxd"]
+[ext_resource type="Script" path="res://dialogue/dialogueplayer.gd" id="1_yii11"]
+
+[node name="Dialogue" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_yii11")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = -53.0
+offset_top = -72.0
+offset_right = 53.0
+offset_bottom = -15.0
+texture = ExtResource("1_gkjxd")
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 197.0
+offset_bottom = 28.0
+scale = Vector2(0.5, 0.5)
+text = "Name:"
+
+[node name="Text" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 17.0
+offset_right = 246.0
+offset_bottom = 109.0
+scale = Vector2(0.4, 0.4)
+text = "Chatting..."
